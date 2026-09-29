@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>David's GitHub Pages</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0f1115;
+            --panel: #1a1d24;
+            --border: #2c313b;
+            --text: #e6e8eb;
+            --muted: #9aa3ae;
+            --link: #7cb7ff;
+            --link-hover: #a9d0ff;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+        .panel {
+            width: 100%;
+            max-width: 560px;
+            padding: 32px 36px;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        h1 {
+            margin: 0 0 20px;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        ol {
+            margin: 0;
+            padding-left: 1.4em;
+        }
+        li { margin: 8px 0; }
+        li::marker { color: var(--muted); }
+        a {
+            color: var(--link);
+            text-decoration: none;
+        }
+        a:hover, a:focus-visible {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>David's GitHub Pages</h1>
-	<ol>
-		<li><a href="./david-test-site/">David Test Site</a></li>
-		<li><a href="./hug-every-cat-threejs/">Hug Every Cat</a></li>
-		<li><a href="./grid-game-threejs/">Bug Grid Game</a></li>
-	</ol>
+    <main class="panel">
+        <h1>David's GitHub Pages</h1>
+        <ol>
+            <li><a href="./david-test-site/">David Test Site</a></li>
+            <li><a href="./hug-every-cat-threejs/">Hug Every Cat</a></li>
+            <li><a href="./grid-game-threejs/">Bug Grid Game</a></li>
+        </ol>
+    </main>
 </body>
 </html>
